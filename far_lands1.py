@@ -5,14 +5,14 @@ import datetime, os, time, keyboard
 #r extra boost (5 sec/use)
 
 def glitch(sec):
-    print((datetime.datetime.today()+datetime.timedelta(seconds=sec)).strftime('time %H:%M:%S'))
+    os.system((datetime.datetime.today()+datetime.timedelta(seconds=sec)).strftime('time %H:%M:%S'))
     time.sleep(0.07)
-    print((datetime.datetime.today()-datetime.timedelta(seconds=sec)).strftime('time %H:%M:%S'))
+    os.system((datetime.datetime.today()-datetime.timedelta(seconds=sec)).strftime('time %H:%M:%S'))
 
 def glitchday():
-    print((datetime.date.today()+datetime.timedelta(days=1)).strftime('date %d-%m-%Y'))
+    os.system((datetime.date.today()+datetime.timedelta(days=1)).strftime('date %d-%m-%Y'))
     time.sleep(0.07)
-    print((datetime.date.today()-datetime.timedelta(days=1)).strftime('date %d-%m-%Y'))
+    os.system((datetime.date.today()-datetime.timedelta(days=1)).strftime('date %d-%m-%Y'))
     
 
 class Controller():
