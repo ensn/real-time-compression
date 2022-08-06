@@ -3,7 +3,7 @@ change_time_sec=1
 changes_per_minute=300
 
 
-wait=60/changes_hz
+wait=60/changes_per_minute
 last_call=0
 state=0
 
